@@ -4,12 +4,265 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moa!</title>
+    <link rel="icon" href="./img/index/Favicon.png" />
+
+    <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
     <div id="wrap">
-      <header></header>
-      <main></main>
-      <footer></footer>
+      <header>
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="./img/index/logo.png" alt="moa" /></a>
+          </h1>
+          <!-- gnb -->
+          <nav id="gnb">
+            <ul class="gnb_menu">
+              <li>
+                <a href="#">이용안내</a>
+              </li>
+              <li>
+                <a href="#">참가등록</a>
+              </li>
+              <li>
+                <a href="#">지도</a>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">이용자 리뷰</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- 아이콘 -->
+            <ul class="icons">
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu1.png" alt="관심" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu2.png" alt="메세지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu3.png" alt="로그인" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <!-- TOP버튼 -->
+        <a href="#" id="up_btn">TOP</a>
+
+        <!-- 메인비주얼 -->
+        <section id="main_visual">
+          <!-- 좌측 메인 -->
+          <div class="box_left">
+            <div class="box_text">
+              <div class="point">봉사 기부</div>
+              <h2 class="visual_title">
+                봉사는 어렵다 라는 생각,<br />
+                다른 어려운 <span>봉사</span>와는 달라요.
+              </h2>
+              <p class="main_write">
+                항상 고민만 하다가 하지 못한 봉사, <br />
+                기부들을 주변에 이웃과 함께 동행해봐요.
+              </p>
+            </div>
+            <div class="main_right_img">
+              <div class="main_person">
+                <img src="./img/index/person1.png" alt="사람" />
+              </div>
+            </div>
+
+            <!-- <div class="box2_Emoji">
+              <div class="shape_1"><img src="./img/Star 3.png" alt="별" /></div>
+              <div class="shape_2"><img src="./img/Star 3.png" alt="별" /></div>
+              <div class="shape_3"><img src="./img/Star 3.png" alt="별" /></div>
+              <div class="shape_4"><img src="./img/Star 3.png" alt="별" /></div>
+              <div class="shape_5"><img src="./img/Star 3.png" alt="별" /></div> 
+            </div>-->
+          </div>
+          <!-- 우측 메인 -->
+          <div class="box_right">
+            <p class="box_top">
+              <span>로그인시 참여</span>하고 있는<br />
+              봉사 및 기부사항에 대해<br />
+              확인할 수 있습니다.
+            </p>
+            <div class="btn_text_wrap">
+              <div class="btn1">
+                <a href="./sub/sub_map.html">관심있는 봉사 보러가기</a>
+              </div>
+              <div class="btn2">
+                <a href="./sub/sub_map.html">관심있는 기부 보러가기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 참여현황 -->
+        <section class="participation">
+          <!-- 공통 컨텐츠 영역 -->
+          <div class="con">
+            <!-- 좌측섹션 -->
+            <div class="num">
+              <p class="num_title">참여인원</p>
+              <p class="num_personnel">5,595<span>명</span></p>
+              <p class="num_description">
+                2024년 모아를 통해 3,595명이 봉사 및 기부를 하였습니다.
+              </p>
+            </div>
+
+            <!-- 우측섹션 -->
+            <div class="main_hope_review_wrap">
+              <div class="main_hope">
+                <img src="./img/Star 3.png" alt="별" class="star" />
+                <p class="hope">봉사 재희망률</p>
+                <p class="main_hope_personnel">900<span> 명</span></p>
+                <p class="main_hope_description">
+                  2024년 모아를 통해 봉사를 재희망하는 사람들입니다.
+                </p>
+              </div>
+              <div class="main_hope">
+                <img src="./img/Star 3.png" alt="별" class="star" />
+                <p class="hope">이용자 리뷰</p>
+                <p class="main_hope_personnel">4,584<span>명</span></p>
+                <p class="main_hope_description">
+                  2024년 모아를 통해 4,584명이 봉사 리뷰를 써주었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 배너 -->
+        <section class="introduction_wrap">
+          <div class="con">
+            <!-- 좌측 -->
+            <div class="introduction">
+              <img src="./img/index/logo.png" alt="로고" />
+              <p class="why">어떻게 만들었는지 궁금하신가요</p>
+              <p class="w_text">
+                스마트폰 이용 미숙, 키오스크 조작법, 도움이 필요한 불편한
+                사람,<br />
+                부모의 부재로 혼자 등교를 하는 어린이, 언어적 도움이 필요한 결혼
+                이민자 등<br />
+                시회적 약자를 위한 어플입니다.
+              </p>
+              <div class="introduction_btn">
+                <a href="./sub/sub_information.html">더보기</a>
+              </div>
+            </div>
+
+            <!-- 우측 -->
+            <div class="character">
+              <img src="./img/index/person2.png" alt="그림" />
+            </div>
+          </div>
+        </section>
+
+        <!-- 노란색 섹션4 -->
+        <section id="yellow_wrap">
+          <div class="con">
+            <!-- 제목 -->
+
+            <div class="yellow_text">
+              <img src="./img/Star 4.png" alt="별" />
+              <p class="easy">
+                내 주변에 기부와 봉사를 할 수 있는<br />
+                쉬운 방법을 알려드릴게요.
+              </p>
+              <p class="way">함께 하는 봉사, 기부 방법을 알려드릴게요.</p>
+            </div>
+            <!-- 이미지 -->
+            <div class="slide">
+              <div class="pic1">
+                <img src="./img/index/pic1.png" alt="자원봉사" />
+                <div class="slide_text">
+                  <p class="together_title">모두 모여 봉사</p>
+                  <p class="together">
+                    혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
+                    모두가 함께 모여 참여해봐요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pic2">
+                <img src="./img/index/pic2.png" alt="자원봉사" />
+                <div class="slide_text">
+                  <p class="together_title">함께 봉사</p>
+                  <p class="together">
+                    혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
+                    모두가 함께 모여 참여해봐요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pic3">
+                <img src="./img/index/pic3.png" alt="자원봉사" />
+                <div class="slide_text">
+                  <p class="together_title">모두 모여 봉사</p>
+                  <p class="together">
+                    혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
+                    모두가 함께 모여 참여해봐요.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 섹션5 -->
+        <div class="index_map_wrap">
+          <div class="con">
+            <div class="index_map_left">
+              <iframe
+                class="index_map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.4926437443746!2d126.91932079999998!3d37.40182910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b60d1b98f47e9%3A0x448b2e506d557075!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1721902209624!5m2!1sko!2skr"
+                width="800"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="index_map_right">
+              <p class="index_map_title">
+                내 주변에 있는 도움이 필요한<br />
+                이웃을 쉽게 만나봐요!
+              </p>
+              <p class="index_map_text">쉬운 참가등록과 지도도 살펴보세요.</p>
+              <div class="index_map_btn_wrap">
+                <a href="./sub/sub_map.html" class="index_map_btn">더보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <!-- footer -->
+        <div class="foot_wrap">
+          <a href="#" class="back"
+            ><img src="../img/index/icon.png" alt="로고" />
+          </a>
+          <div class="foot_right">
+            <p class="moa">@moa!, All right reserved.</p>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">청소년보호정책</a>
+            <a href="#">통신판매신고업번호</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

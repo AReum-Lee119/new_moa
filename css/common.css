@@ -1,0 +1,203 @@
+@import url(./reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* 드래그 했을 때 */
+::selection {
+  background-color: #fce53d;
+  color: #227aff;
+}
+
+/* 스크롤 모양*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fce53d 0%, #227aff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fce53d;
+}
+
+a {
+  color: #1e1e1e;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+}
+
+/* top 버튼*/
+#up_btn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 134px;
+}
+
+h1 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+#gnb {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#gnb > ul {
+  height: 100%;
+  display: flex;
+}
+/* 대메뉴 */
+#gnb > ul.gnb_menu {
+  gap: 70px;
+}
+#gnb > ul.gnb_menu > li {
+  line-height: 52px;
+  font-size: 18px;
+  position: relative;
+}
+/* 애니메이션 */
+#gnb > ul.gnb_menu > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 30%;
+  top: 33px;
+  right: 0;
+  z-index: -1;
+  background: rgb(255 235 59);
+  transition: all 0.3s ease;
+}
+#gnb > ul.gnb_menu > li:hover a::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+#gnb > ul.gnb_menu > li {
+  line-height: 68px;
+  position: relative;
+}
+
+#gnb > ul.gnb_menu > li > a:hover {
+  color: #181818;
+}
+
+/* 2차메뉴 */
+.submenu {
+  width: 200px;
+  line-height: 40px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-left: -68px;
+  border-radius: 50px;
+}
+
+#gnb > ul.gnb_menu > li:hover .submenu {
+  height: 40px;
+}
+
+.submenu a:hover {
+  color: #181818;
+  font-weight: 500;
+}
+
+/* 아이콘 메뉴 */
+#gnb > ul.icons {
+  gap: 40px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-left: auto;
+}
+#gnb > ul.icons > li {
+  width: fit-content;
+  cursor: pointer;
+}
+#gnb > ul.icons > li:hover {
+  filter: hue-rotate(10deg);
+}
+
+/* 컨텐츠 영역 */
+main {
+  width: 100%;
+  height: fit-content;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+/* 컨텐츠 영역 공통 */
+.con {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* footer */
+.foot_wrap {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.foot_wrap .back > img {
+  margin-left: 8px;
+}
+
+.foot_right {
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  gap: 26px;
+  font-size: 14px;
+}
+
+.foot_right > .moa {
+  color: #c7c7c7;
+}
+
+.foot_wrap .foot_right a:hover {
+  color: #227aff;
+}
