@@ -47,7 +47,7 @@ body {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  z-index: 999;
+  z-index: 0;
   transition: all 0.3s ease;
 }
 
@@ -125,6 +125,7 @@ h1 {
   gap: 10px;
   margin-left: -68px;
   border-radius: 50px;
+  z-index: 1;
 }
 
 #gnb > ul.gnb_menu > li:hover .submenu {

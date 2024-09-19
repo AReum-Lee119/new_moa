@@ -1,0 +1,172 @@
+@charset "uft-8";
+@import url(./common.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 메인 비주얼 */
+#infor_main_wrap {
+  width: 100%;
+  height: auto;
+}
+
+.spirit {
+  width: auto;
+  height: fit-content;
+}
+
+.spirit h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 150px;
+  line-height: 60px;
+}
+
+.spirit p {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* 선택이미지 */
+#select_image_wrap {
+  width: 100%;
+  height: auto;
+}
+/* 이미지 */
+.section_1 {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 70px;
+}
+
+/* 이미지 텍스트 */
+.section_2 {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  gap: 50px;
+}
+
+.age {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+
+.adult {
+  width: 200px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #efefef;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+.adult:hover {
+  background-color: #227aff;
+}
+.adult:hover a {
+  color: #fff;
+}
+
+.minors {
+  width: 200px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #efefef;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+.minors:hover {
+  background-color: #227aff;
+}
+.minors:hover a {
+  color: #fff;
+}
+
+/* 섹션2 */
+#section_wrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+}
+/* 공통 */
+.common_area {
+  width: 1200px;
+  height: 80px;
+  background-color: #f0f0f0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+  padding-left: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.description img {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.description p {
+  width: 1200px;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+
+.description p a {
+  font-weight: 600;
+}
+
+/* 섹션3 */
+
+.adult_minors {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.adult_minors_text {
+  text-align: center;
+  margin-top: 50px;
+  line-height: 30px;
+}
+.adult_minors_text a {
+  font-weight: 600;
+}
+
+.going_to_donate {
+  width: 200px;
+  height: 45px;
+  background-color: #227aff;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.going_to_donate a {
+  color: #fff;
+}

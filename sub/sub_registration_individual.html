@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>참가등록 개인</title>
+    <link rel="icon" href="../img/index/Favicon.png" />
+
+    <link rel="stylesheet" href="../css/sub_registration_individual.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="../img/index/logo.png" alt="moa" /></a>
+          </h1>
+          <!-- gnb -->
+          <nav id="gnb">
+            <ul class="gnb_menu">
+              <li>
+                <a href="#">이용안내</a>
+              </li>
+              <li>
+                <a href="#">참가등록</a>
+              </li>
+              <li>
+                <a href="#">지도</a>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">이용자 리뷰</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- 아이콘 -->
+            <ul class="icons">
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu1.png" alt="관심" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu2.png" alt="메세지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/index/menu3.png" alt="로그인" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <!-- TOP버튼 -->
+        <a href="#" id="up_btn">TOP</a>
+
+        <!-- 메인 이미지 -->
+        <div class="main_big_img">
+          <img
+            src="../img/sub_registration_individual/registration_main.png"
+            alt="봉사"
+          />
+        </div>
+        <div class="con">
+          <div class="regist_wrapper">
+            <!-- 개인등록 / 2인 이상 등록 -->
+            <div class="tab_wrap_two">
+              <ul>
+                <li class="tab_notice_two">
+                  <a href="#">개인등록</a>
+                </li>
+                <li class="tab_review_two">
+                  <a href="#">2인 이상 등록</a>
+                </li>
+              </ul>
+            </div>
+
+            <form action="#" method="post" id="registration">
+              <!-- 개인등록 -->
+              <h4 class="individual_title">개인등록</h4>
+
+              <!-- 14세 미만 -->
+              <div class="child_agreement">
+                <div class="less_than">
+                  <h3>만 14세 미만</h3>
+                  <label for="agree1" class="radio_box">
+                    <input
+                      type="radio"
+                      id="agree1"
+                      name="agree"
+                      value="동의"
+                      checked="checked"
+                    />
+                    <span class="on"></span>
+                    동의
+                  </label>
+                  <label for="agree2" class="radio_box">
+                    <input
+                      type="radio"
+                      id="agree2"
+                      name="agree"
+                      value="미동의"
+                    />
+                    <span class="on"></span>
+                    미동의
+                  </label>
+                </div>
+
+                <p class="warning_two">
+                  ※ 14세 미만인 분들은 부모님의 동의서 또는 가까운 성인 동의서가
+                  필요합니다.
+                </p>
+              </div>
+
+              <!-- 입력폼 -->
+              <div class="info_box">
+                 <!-- 이름 작성 -->
+                 <div class="info">
+                  <label for="user_name">이름</label>
+                  <input
+                    type="text"
+                    class="text_box"
+                    name="user_name"
+                    id="user_name"
+                    placeholder="이름"
+                  />
+                 </div>
+                 <!-- 핸드폰 -->
+                 <div class="info">
+                  <label for="user_phone">핸드폰</label>
+                  <input
+                    type="tel"
+                    class="text_box"
+                    name="user_phone"
+                    id="user_phone"
+                    placeholder="010"
+                  />
+                 </div>
+                 <!-- 생년월일 -->
+                 <div class="birth">
+                  <label for="birth_date">생년월일</label>
+                  <input
+                    type="text"
+                    class="birth_text_box"
+                    name="birth_date"
+                    id="birth_date"
+                    placeholder="생년월일"
+                  />
+                  <select class="box" id="birth_month">
+                    <option disabled selected>월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5">5월</option>
+                    <option value="6">6월</option>
+                    <option value="7">7월</option>
+                    <option value="8">8월</option>
+                    <option value="9">9월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                  </select>
+                  <select class="box" id="birth_day">
+                    <option disabled selected>일</option>
+                    <option value="1">1일</option>
+                    <option value="2">2일</option>
+                    <option value="3">3일</option>
+                    <option value="4">4일</option>
+                    <option value="5">5일</option>
+                    <option value="6">6일</option>
+                    <option value="7">7일</option>
+                    <option value="8">8일</option>
+                    <option value="9">9일</option>
+                    <option value="10">10일</option>
+                    <option value="11">11일</option>
+                    <option value="12">12일</option>
+                    <option value="13">13일</option>
+                    <option value="14">14일</option>
+                    <option value="15">15일</option>
+                    <option value="15">16일</option>
+                    <option value="17">17일</option>
+                    <option value="18">18일</option>
+                    <option value="19">19일</option>
+                    <option value="20">20일</option>
+                    <option value="21">21일</option>
+                    <option value="22">22일</option>
+                    <option value="23">23일</option>
+                    <option value="24">24일</option>
+                    <option value="25">25일</option>
+                    <option value="26">26일</option>
+                    <option value="27">27일</option>
+                    <option value="28">28일</option>
+                    <option value="29">29일</option>
+                    <option value="30">30일</option>
+                    <option value="31">31일</option>
+                  </select>
+                  </div>
+                  </div>
+                   <!-- 지역 -->
+                  <div class="select_info">
+                  <label for="select_place">지역</label>
+                    <select class="select_place" id="select_place">
+                        <option disabled selected>서울</option>
+                        <option value="경기">경기</option>
+                        <option value="인천">인천</option>
+                        <option value="충청도">충청도</option>
+                        <option value="경상도">경상도</option>
+                        <option value="전라도">전라도</option>
+                        <option value="제주도">제주도</option>
+                    </select>
+                 </div>
+                
+                <!-- 체크박스 -->
+                
+                <!-- 1 -->
+                <label class="checkbox_label">
+                    <input type="checkbox" checked />
+                    <span class="checkbox_icon"></span>
+                    <span class="checkbox_text">개인정보 수집 및 이용</span>
+                </label>
+
+                <!-- 2 -->
+                <label class="checkbox_label">
+                    <input type="checkbox" />
+                    <span class="checkbox_icon"></span>
+                    <span class="checkbox_text">실명 인증된 아이디로 가입</span>
+                </label>
+
+                <!-- 3 -->
+                <label class="checkbox_label">
+                    <input type="checkbox" />
+                    <span class="checkbox_icon"></span>
+                    <span class="checkbox_text">위치기반서비스 이용약관</span>
+                </label>
+
+                <!-- 버튼 -->
+                <div class="near_wrap">
+                    <div class="near_btn">
+                    <a href="#">나에게 가까운 기관에 등록 신청</a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+                    <!-- footer -->
+            <div class="foot_wrap">
+                <a href="/" class="back"
+                  ><img src="../img/index/icon.png" alt="로고" />
+                </a>
+                <div class="foot_right">
+                  <p class="moa">@moa!, All right reserved.</p>
+                  <a href="#">이용약관</a>
+                  <a href="#">개인정보 처리방침</a>
+                  <a href="#">청소년보호정책</a>
+                  <a href="#">통신판매신고업번호</a>
+                </div>
+              </div>
+          <!-- js -->
+          <script src="../js/jquery.min.js"></script>
+          <script src="../js/jq_index.js"></script>
+      
+      </footer>
+    </div>
+  </body>
+</html>

@@ -366,7 +366,7 @@ body {
   margin-top: 150px;
   margin-bottom: 200px;
 }
-.con {
+.con1 {
   display: flex;
   justify-content: space-between;
 }
@@ -380,7 +380,7 @@ body {
 /* 우측 텍스트 */
 .index_map_right {
   width: 50%;
-  height: fit-content;
+  position: relative;
 }
 
 .index_map_title {
@@ -404,6 +404,9 @@ body {
   line-height: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .index_map_btn_wrap:hover {
   background-color: #e2e2e2;

@@ -1,0 +1,315 @@
+@charset "uft-8";
+@import url(./common.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 메인 이미지 */
+.main_big_img {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 100px;
+}
+
+.main_big_img img {
+  width: 100%;
+  height: fit-content;
+}
+
+.regist_wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* 개인등록 / 2인 이상 등록 */
+.tab_wrap_two {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 38px;
+}
+
+.tab_wrap_two ul {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.tab_wrap_two ul .tab_notice_two {
+  color: #181818;
+  width: 150px;
+  position: relative;
+}
+
+/* 애니메이션 */
+.tab_notice_two a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 54%;
+  display: block;
+  top: 36%;
+  right: 0;
+  z-index: -1;
+  background: rgb(255 235 59);
+  transition: all 0.4s ease;
+}
+
+.tab_wrap_two ul .tab_notice_two:hover a::after {
+  left: 0;
+  right: auto;
+  width: 150px;
+}
+
+.tab_review_two a {
+  color: #a7a7a7;
+}
+
+#registration {
+  width: 100%;
+  height: fit-content;
+}
+
+/* 섹션1 개인등록 */
+.individual_title {
+  font-size: 28px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+/* 14세 미만 */
+.child_agreement {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.less_than {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 12px;
+}
+.less_than > h3 {
+  font-size: 18px;
+}
+
+.warning_two {
+  width: 100%;
+  height: fit-content;
+  font-size: 16px;
+  color: #227aff;
+  line-height: 50px;
+}
+
+.radio_box {
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 기본 라디오 버튼 숨기기 */
+.radio_box input[type="radio"] {
+  display: none;
+}
+
+/* 선택되지 않은 라디오 버튼 스타일 꾸미기 */
+.on {
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 선택된 라디오 버튼 스타일 꾸미기 */
+.radio_box input[type="radio"]:checked + .on {
+  background: #ffeb3b;
+}
+.on:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio_box input[type="radio"]:checked + .on:after {
+  display: block;
+}
+.on:after {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+/* 이름 */
+.info {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info label {
+  font-size: 18px;
+  display: inline-block;
+}
+.text_box {
+  width: 600px;
+  height: 48px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 0px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  color: #1e1e1e;
+}
+
+/* 생년월일 */
+/* SECTION - BIRTH */
+
+.birth {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 34px;
+  margin-bottom: 40px;
+}
+
+.birth label {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.birth_text_box {
+  background-color: #f2f2f2;
+  border: 0px;
+  color: #181818;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+.birth_date {
+  width: 180px;
+  height: 48px;
+  border: 0px;
+  background-color: #f2f2f2e3;
+  font-size: 16px;
+}
+
+#birth_date,
+#birth_month,
+#birth_day {
+  padding-left: 20px;
+  border-radius: 4px;
+}
+
+.box {
+  width: 140px;
+  height: 48px;
+  border: 0px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+/* 지역 */
+.select_info {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select_info label {
+  font-size: 18px;
+  display: inline-block;
+}
+.select_place {
+  width: 600px;
+  height: 48px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 0px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  color: #1e1e1e;
+}
+
+/* 체크박스 */
+/* input 초기화 */
+input[type="checkbox"] {
+  display: none;
+}
+/* (체크박스, 텍스트) 정렬 맞추기 */
+.checkbox_label {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* 체크박스 디자인 */
+.checkbox_icon::before {
+  content: "";
+  display: block;
+  margin-right: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #9da3a5;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* checked */
+.checkbox_label input:checked + .checkbox_icon::before {
+  transition: all 0.15s ease;
+  background: url(../img/sub_registration_individual/check.png) #fce53d
+    no-repeat center;
+  border: none;
+}
+
+/* 버튼 */
+.near_wrap {
+  width: auto;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.near_btn {
+  width: 400px;
+  height: 50px;
+  background-color: #fce53d;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+}
