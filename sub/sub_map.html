@@ -8,60 +8,211 @@
 
     <link rel="stylesheet" href="../css/sub_map.css" />
   </head>
-  <body>
-    <div id="wrap">
-      <header>
+    <body>
+      <div id="wrap">
+        <header>
+          <div class="con">
+            <!-- 로고 -->
+            <h1>
+              <a href="/"><img src="../img/index/logo.png" alt="moa" /></a>
+            </h1>
+            <!-- gnb -->
+            <nav id="gnb">
+              <ul class="gnb_menu">
+                <li>
+                  <a href="../css/sub_information.css">이용안내</a>
+                </li>
+                <li>
+                  <a href="../css/sub_registration_individual.css">참가등록</a>
+                </li>
+                <li>
+                  <a href="../css/sub_map.css">지도</a>
+                </li>
+                <li>
+                  <a href="../css/sub_notice.css">커뮤니티</a>
+                  <ul class="submenu">
+                    <li><a href="../css/sub_notice.css">공지사항</a></li>
+                    <li><a href="../css/sub_review.css">이용자 리뷰</a></li>
+                  </ul>
+                </li>
+              </ul>              <!-- 아이콘 -->
+              <ul class="icons">
+                <li>
+                  <a href="#">
+                    <img src="../img/index/menu1.png" alt="관심" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../img/index/menu2.png" alt="메세지" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../img/index/menu3.png" alt="로그인" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <!-- TOP버튼 -->
+          <a href="#" id="up_btn">TOP</a>
+  
+  
+      
+        <!-- 섹션1_지도 -->
+        <div class="moa_map_wrap">
+          <div class="moa_map">
+            <div class="map_warning">
+              <img src="../img/sub_map/warning.png" alt="경고" />24시간 불건전
+              유저 모니터링
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.492464679106!2d126.91674587609862!3d37.40183333355499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b60d1b98f47e9%3A0x448b2e506d557075!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1724052060187!5m2!1sko!2skr"
+              width="1910"
+              height="800"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div> 
+
+        <main>
         <div class="con">
-          <!-- 로고 -->
-          <h1>
-            <a href="/"><img src="../img/index/logo.png" alt="moa" /></a>
-          </h1>
-          <!-- gnb -->
-          <nav id="gnb">
-            <ul class="gnb_menu">
-              <li>
-                <a href="#">이용안내</a>
-              </li>
-              <li>
-                <a href="#">참가등록</a>
-              </li>
-              <li>
-                <a href="#">지도</a>
-              </li>
-              <li>
-                <a href="#">커뮤니티</a>
-                <ul class="submenu">
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">이용자 리뷰</a></li>
-                </ul>
-              </li>
-            </ul>
-            <!-- 아이콘 -->
-            <ul class="icons">
-              <li>
-                <a href="#">
-                  <img src="../img/index/menu1.png" alt="관심" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/index/menu2.png" alt="메세지" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/index/menu3.png" alt="로그인" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <!-- TOP버튼 -->
-        <a href="#" id="up_btn">TOP</a>
+        <!-- 섹션2 -->
+        <!-- 좌측 -->
+        <section class="spirit">
+          <div id="spirit_left">
+            <img src="../img/sub_map/person1.png" alt="사람" />
+            <img src="../img/sub_map/star_on.png" alt="즐겨찾기" class="star_1">
+            <div class="my_profile">활동가</div>
+            <p class="detail_profile">
+              <span>신재희</span> 28세 디자인 프리랜서
+            </p>
+          </div>
+          <!-- 중앙 -->
+          <div id="spirit_center">
+            <div id="location">
+              <p class="my_location">나의 현재 위치</p>
+              <p class="anyang">안양역 근처</p>
+            </div>
+            <div id="times">
+              <p class="number_of_times">도와준 횟수</p>
+              <p class="seven"><span>7</span>회</p>
+            </div>
+          </div>
+          <!-- 우측 -->
+          <div id="spirit_right">
+            <div class="help">
+              <p class="help_person">도움이 필요한 사람</p>
+              <p class="five"><span>5</span>명</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 섹션3 -->
+        <section>
+          <div id="big_near_wrap1">
+            <h2 id="help_person1">내 근처 도움이 필요한 사람</h2>
+            <div id="near_wrap">
+              <img src="../img/sub_map/warning.png" alt="경고" />
+              <p>클린한 대화를 위한 AI 경고 작동중</p>
+            </div>
+
+            <div class="profile_wrapper">
+              <div id="big_near_wrap2">
+                <!-- 호준 -->
+                <div class="your_profile">
+                  <div class="profile_wrap">
+                    <div class="img_box">
+                      <img src="../img/sub_map/person2.png" alt="사람" />
+                      <img src="../img/sub_map/star_on.png" alt="즐겨찾기" class="star_1">
+                      <div class="profile_wrap_hover">
+                        <div class="talking">대화하기</div>
+                      </div>
+                    </div>
+                    <div class="your_help_profile">수혜자</div>
+                    <p class="personal"><span>김호준</span> 22세 무직</p>
+                    <p class="beneficiary">지하철역 휠체어 <br />도와주세요.</p>
+                  </div>
+                </div>
+
+                <!-- 민오 -->
+                <div class="your_profile">
+                  <div class="profile_wrap">
+                    <div class="img_box">
+                      <img src="../img/sub_map/person3.png" alt="사람" />
+                      <img src="../img/sub_map/star_off.png" alt="즐겨찾기" class="star_1">
+                      <div class="profile_wrap_hover">
+                        <div class="talking">대화하기</div>
+                      </div>
+                    </div>
+                    <div class="your_help_profile">수혜자</div>
+                    <p class="personal"><span>하민오</span> 76세 무직</p>
+                    <p class="beneficiary">
+                      롯데리아 키오스크 <br />도와주세요.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 지희 -->
+                <div class="your_profile">
+                  <div class="profile_wrap">
+                    <div class="img_box">
+                      <img src="../img/sub_map/person4.png" alt="사람" />
+                      <img src="../img/sub_map/star_off.png" alt="즐겨찾기" class="star_1">
+                      <div class="profile_wrap_hover">
+                        <div class="talking">대화하기</div>
+                      </div>
+                    </div>
+                    <div class="your_help_profile">수혜자</div>
+                    <p class="personal"><span>이지희</span> 26세 식당직원</p>
+                    <p class="beneficiary">
+                      결혼이민자 지역시골장 <br />같이 가주세요.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 예린 -->
+                <div class="your_profile">
+                  <div class="profile_wrap">
+                    <div class="img_box">
+                      <img src="../img/sub_map/person5.png" alt="사람" />
+                      <img src="../img/sub_map/star_off.png" alt="즐겨찾기" class="star_1">
+                      <div class="profile_wrap_hover">
+                        <div class="talking">대화하기</div>
+                      </div>
+                    </div>
+                    <div class="your_help_profile">수혜자</div>
+                    <p class="personal"><span>정예린</span> 10세 학생</p>
+                    <p class="beneficiary">혼자 하교 <br />도움 받고 싶어요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
+      <footer>
+        <!-- footer -->
+        <div class="foot_wrap">
+          <a href="#" class="back"
+            ><img src="../img/index/icon.png" alt="로고" />
+          </a>
+          <div class="foot_right">
+            <p class="moa">@moa!, All right reserved.</p>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">청소년보호정책</a>
+            <a href="#">통신판매신고업번호</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
-  <footer></footer>
 </html>

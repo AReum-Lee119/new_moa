@@ -5,3 +5,304 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+/* 섹션1_지도 */
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.moa_map {
+  width: 100%;
+  height: auto;
+}
+
+.map_warning {
+  width: 350px;
+  height: 46px;
+  background-color: #fce53d;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  left: 50%;
+  top: 80px;
+  margin-left: -180px;
+  z-index: 999;
+  line-height: 46px;
+}
+
+.map_warning img {
+  margin-right: 4%;
+  margin-bottom: -1%;
+}
+
+.moa_map iframe {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+/* 섹션2 */
+
+.spirit {
+  width: 80%;
+  margin: 0 auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* 좌측 */
+#spirit_left {
+  flex: 1;
+  height: auto;
+  position: relative;
+}
+
+.my_profile {
+  width: 190px;
+  height: 48px;
+  background-color: #fce53d;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.star_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#spirit_left .detail_profile {
+  font-size: 22px;
+  margin-top: 40px;
+  text-align: center;
+  color: #191919;
+}
+
+#spirit_left .detail_profile span {
+  font-weight: 600;
+}
+
+/* 중앙 */
+#spirit_center {
+  flex: 1;
+  height: fit-content;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#location {
+  width: auto;
+  margin-top: 7%;
+}
+
+.my_location,
+.number_of_times {
+  font-size: 22px;
+  font-weight: 500;
+  color: #191919;
+  margin-bottom: 30px;
+}
+
+#times {
+  width: auto;
+  margin-top: 15%;
+}
+
+.anyang,
+.seven {
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+
+  margin-bottom: 30px;
+}
+
+.seven span {
+  color: #227aff;
+}
+
+/* 우측 */
+#spirit_right {
+  flex: 1;
+  text-align: center;
+}
+
+.help {
+  width: auto;
+  margin-top: 7%;
+}
+
+.help .help_person {
+  font-size: 22px;
+  font-weight: 500;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+.help .five {
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+}
+
+.five span {
+  color: #227aff;
+}
+
+/* 섹션3 */
+#big_near_wrap1 {
+  width: auto;
+  height: fit-content;
+  margin-top: 6%;
+  margin-bottom: 150px;
+}
+
+#help_person1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+  margin-left: 40%;
+  margin-top: 4%;
+}
+
+#help_person1::before {
+  content: "";
+  display: block;
+  background-color: #fce53d;
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  left: 64%;
+  top: 13px;
+  z-index: -1;
+}
+
+#near_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40%;
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+
+#near_wrap p {
+  font-size: 18px;
+  color: #191919;
+}
+
+/* 프로필4 */
+
+.profile_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#big_near_wrap2 {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+/* 1 */
+.profile_wrap {
+  width: 400px;
+  height: auto;
+  position: relative;
+}
+.profile_wrap .img_box {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile_wrap_hover {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.profile_wrap .img_box .talking {
+  width: 250px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #fce53d;
+  font-size: 26px;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+.img_box:hover .profile_wrap_hover {
+  display: flex;
+}
+.profile_wrap img {
+  object-fit: cover;
+}
+.profile_wrap .your_help_profile {
+  width: 190px;
+  height: 48px;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 275px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.personal {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.personal span {
+  font-weight: 600;
+}
+
+.beneficiary {
+  font-size: 23px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+/* footer */
+
+.foot_wrap {
+  width: 100%;
+  height: 60px;
+  background-color: #f8f8f8;
+}
