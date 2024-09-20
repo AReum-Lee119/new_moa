@@ -275,6 +275,11 @@ body {
   margin-bottom: 150px;
 }
 
+#additional a:hover {
+  background-color: #ddd;
+  color: #181818;
+}
+
 /* 체크박스 */
 /* input 초기화 */
 input[type="checkbox"] {
