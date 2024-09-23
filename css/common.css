@@ -139,6 +139,7 @@ h1 {
 
 /* 아이콘 메뉴 */
 #gnb > ul.icons {
+  width: 150px;
   gap: 40px;
   align-items: center;
   position: absolute;
