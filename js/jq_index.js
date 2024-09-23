@@ -1,6 +1,6 @@
 $(function () {
   //top 버튼
-  $("#top_top").on("click", function (event) {
+  $("#up_btn").on("click", function (event) {
     event.preventDefault();
     $("html").animate({ scrollTop: 0 }, 1000);
   });
@@ -13,5 +13,19 @@ $(function () {
     e.preventDefault();
 
     $(".second").show();
+  });
+
+  // 슬릭슬라이드
+  $(".slide").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    infinite: true,
+    prevArrow: $("#arrow_prev"), //이전 화살표만 변경
+    nextArrow: $("#aroww_next"), //다음 화살표만 변경
+
+    //클릭시 페이지 내에 특정위치로 스크롤 이동
   });
 });

@@ -20,7 +20,7 @@ body {
   width: fit-content;
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 38px;
   position: relative;
   margin: 0 auto;
 }
@@ -70,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 40px;
+  column-gap: 63px;
   cursor: pointer;
 }
 
@@ -217,7 +217,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 40px;
+  column-gap: 63px;
   cursor: pointer;
 }
 

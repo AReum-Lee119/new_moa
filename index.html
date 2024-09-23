@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moa!</title>
     <link rel="icon" href="./img/index/Favicon.png" />
-
     <link rel="stylesheet" href="./css/layout.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
   </head>
   <body>
     <div id="wrap">
@@ -185,7 +187,6 @@
         <section id="yellow_wrap">
           <div class="con">
             <!-- 제목 -->
-
             <div class="yellow_text">
               <img src="./img/Star 4.png" alt="별" />
               <p class="easy">
@@ -197,13 +198,8 @@
             <!-- 이미지 -->
             <div class="slide">
               <div class="pic1">
-                <img src="./img/index/pic1.png" alt="자원봉사" />
+                <img src="./img/index/pic1.jpg" alt="자원봉사" />
                 <div class="slide_text">
-                  <p class="together_title">모두 모여 봉사</p>
-                  <p class="together">
-                    혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
-                    모두가 함께 모여 참여해봐요.
-                  </p>
                 </div>
               </div>
 
@@ -214,19 +210,36 @@
                   <p class="together">
                     혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
                     모두가 함께 모여 참여해봐요.
-                  </p>
                 </div>
               </div>
 
               <div class="pic3">
-                <img src="./img/index/pic3.png" alt="자원봉사" />
+                <img src="./img/index/pic3.jpg" alt="자원봉사" />
                 <div class="slide_text">
-                  <p class="together_title">모두 모여 봉사</p>
-                  <p class="together">
-                    혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
-                    모두가 함께 모여 참여해봐요.
                   </p>
                 </div>
+              </div>
+              <div class="pic4">
+                <img src="./img/index/pic4.jpg" alt="자원봉사" />
+                <div class="slide_text">
+                </div>
+              </div>
+            </div>
+            <!-- 양옆 화살표 -->
+             <div class="arrow_wrap">
+              <div class="prev">
+                <img
+                  id="arrow_prev"
+                  src="./img/arrow_left.png"
+                  alt="왼쪽 화살표"
+                />
+              </div>
+              <div class="next">
+                <img
+                  id="aroww_next"
+                  src="./img/arrow_right.png"
+                  alt="오른쪽 화살표"
+                />
               </div>
             </div>
           </div>
@@ -262,24 +275,25 @@
           </div>
         </div>
       </main>
+      <footer>
+        <!-- footer -->
+        <div class="foot_wrap">
+          <a href="#" class="back"
+            ><img src="../img/index/icon.png" alt="로고" />
+          </a>
+          <div class="foot_right">
+            <p class="moa">@moa!, All right reserved.</p>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">청소년보호정책</a>
+            <a href="#">통신판매신고업번호</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
-  <footer>
-    <!-- footer -->
-    <div class="foot_wrap">
-      <a href="#" class="back"
-        ><img src="../img/index/icon.png" alt="로고" />
-      </a>
-      <div class="foot_right">
-        <p class="moa">@moa!, All right reserved.</p>
-        <a href="#">이용약관</a>
-        <a href="#">개인정보 처리방침</a>
-        <a href="#">청소년보호정책</a>
-        <a href="#">통신판매신고업번호</a>
-      </div>
-    </div>
-    <!-- js -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jq_index.js"></script>
-  </footer>
+  <!-- js -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jq_index.js"></script>
 </html>

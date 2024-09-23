@@ -67,40 +67,41 @@ body {
   height: 45px;
   background-color: #fff;
   border-radius: 50px;
-  border: 2px solid #efefef;
+  /* border: 2px solid #efefef; */
   text-align: center;
   line-height: 45px;
   cursor: pointer;
 }
-.adult:hover {
+/* .adult:hover {
   background-color: #227aff;
 }
 .adult:hover a {
   color: #fff;
-}
+} */
 
 .minors {
   width: 200px;
   height: 45px;
   background-color: #fff;
   border-radius: 50px;
-  border: 2px solid #efefef;
+  /* border: 2px solid #efefef; */
   text-align: center;
   line-height: 45px;
   cursor: pointer;
 }
-.minors:hover {
+/* .minors:hover {
   background-color: #227aff;
 }
 .minors:hover a {
   color: #fff;
-}
+} */
 
 /* 섹션2 */
 #section_wrap {
   width: 100%;
   height: auto;
   padding-bottom: 150px;
+  padding-top: 150px;
 }
 /* 공통 */
 .common_area {
@@ -155,12 +156,12 @@ body {
 }
 
 .going_to_donate {
-  width: 200px;
-  height: 45px;
+  width: 260px;
+  height: 50px;
   background-color: #227aff;
   border-radius: 50px;
   text-align: center;
-  line-height: 45px;
+  line-height: 50px;
   cursor: pointer;
   margin: 0 auto;
   margin-top: 50px;

@@ -113,7 +113,7 @@ h1 {
 
 /* 2차메뉴 */
 .submenu {
-  width: 200px;
+  width: 260px;
   line-height: 40px;
   height: 0;
   overflow: hidden;
@@ -151,6 +151,10 @@ h1 {
 }
 #gnb > ul.icons > li:hover {
   filter: hue-rotate(10deg);
+  background-color: #fce53d;
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
 }
 
 /* 컨텐츠 영역 */
