@@ -151,7 +151,6 @@ h1 {
   cursor: pointer;
 }
 #gnb > ul.icons > li:hover {
-  filter: hue-rotate(10deg);
   background-color: #fce53d;
   width: 22px;
   height: 22px;

@@ -18,20 +18,42 @@ main {
   display: flex;
 }
 
+p {
+  font-size: 20px;
+}
+/* 메인 */
 /* 좌측 */
 .spirit_left {
   width: 50%;
   height: auto;
   margin-top: 150px;
+  position: relative;
 }
 
 .spirit_left h3 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 800;
-  margin-bottom: 100px;
+  text-align: left;
+  margin-left: 160px;
+  z-index: 999;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+.spirit_left h3::before {
+  content: "";
+  display: block;
+  width: 93px;
+  height: 25px;
+  background-color: #fce53d;
+  position: absolute;
+  top: 52px;
+  left: 261px;
+  z-index: -1;
 }
 
 .people_img img {
+  margin-left: 163px;
   border-radius: 200px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -45,16 +67,27 @@ main {
 /* 1 */
 #basics {
   width: 650px;
-  height: 200px;
+  height: 250px;
   background-color: #fff;
   border-radius: 20px;
   margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#basics h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 50px 0 0 50px;
+  margin-bottom: 30px;
+}
+
+.basics_wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   line-height: 40px;
-  margin-bottom: 50px;
 }
+
 .basics_txt span {
   font-weight: 700;
   color: #227aff;
@@ -63,7 +96,7 @@ main {
 /* 2 */
 #purchase {
   width: 650px;
-  height: 330px;
+  height: 300px;
   background-color: #fff;
   border-radius: 20px;
 }
@@ -75,6 +108,36 @@ main {
 }
 
 .purchase_wrap {
+  width: 650px;
+  height: fit-content;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 60px;
+  line-height: 40px;
+}
+
+.icon_wrap {
+  text-align: center;
+}
+
+/* 3 */
+#activity {
+  width: 650px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+#activity h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 50px 0 0 50px;
+}
+
+.breakdown {
+  margin-left: 114px;
+  margin-top: 29px;
+  line-height: 40px;
 }

@@ -48,17 +48,6 @@ body {
   position: relative;
 }
 
-.visual_title span::before {
-  content: "";
-  display: block;
-  width: 73px;
-  height: 30px;
-  background-color: #fce53d;
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  z-index: -1;
-}
 .main_write {
   font-size: 24px;
   line-height: 30px;
@@ -218,78 +207,14 @@ body {
   font-weight: 800;
 }
 
-/* 배너 */
-.introduction_wrap {
-  width: 100%;
-  height: 500px;
-  background-color: #f3f3f3;
-  margin-bottom: 200px;
-}
-
-.introduction_wrap > .con {
-  width: 1600px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 좌측 */
-
-.introduction {
-  width: 50%;
-  height: auto;
-}
-
-.introduction > img {
-  margin-bottom: 20px;
-}
-
-.why {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 40px;
-}
-
-.w_text {
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 40px;
-}
-
-.introduction_btn {
-  width: 170px;
-  height: 50px;
-  background-color: #227aff;
-  border-radius: 50px;
-  text-align: center;
-}
-.introduction_btn:hover {
-  background-color: #e2e2e2;
-}
-.introduction_btn:hover a {
-  color: #181818;
-}
-
-.introduction_btn > a {
-  color: #fff;
-  line-height: 50px;
-}
-
-/* 우측 */
-.character {
-  width: fit-content;
-  height: 494px;
-  align-self: flex-end;
-}
-
-/* 노란 배경 섹션 */
+/* 노란 배경 섹션4 */
 
 #yellow_wrap {
   width: 100%;
   height: 1050px;
   background-color: #fce53d;
   border-radius: 30px 30px 0 0;
+  margin-bottom: 250px;
 }
 
 /* 제목 */
@@ -307,7 +232,7 @@ body {
 
 .way {
   font-size: 26px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 /* 이미지 */
@@ -398,11 +323,75 @@ body {
   transition: all 0.3s ease;
 }
 
+/* 배너 */
+.introduction_wrap {
+  width: 100%;
+  height: 500px;
+  background-color: #f3f3f3;
+}
+
+.introduction_wrap > .con {
+  width: 1600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 좌측 */
+
+.introduction {
+  width: 50%;
+  height: auto;
+}
+
+.introduction > img {
+  margin-bottom: 20px;
+}
+
+.why {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.w_text {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.introduction_btn {
+  width: 170px;
+  height: 50px;
+  background-color: #227aff;
+  border-radius: 50px;
+  text-align: center;
+}
+.introduction_btn:hover {
+  background-color: #e2e2e2;
+}
+.introduction_btn:hover a {
+  color: #181818;
+}
+
+.introduction_btn > a {
+  color: #fff;
+  line-height: 50px;
+}
+
+/* 우측 */
+.character {
+  width: fit-content;
+  height: 494px;
+  align-self: flex-end;
+}
+
 /* 지도 - 섹션5 */
 .index_map_wrap {
   width: 100%;
   height: auto;
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 200px;
 }
 .con1 {

@@ -25,7 +25,5 @@ $(function () {
     infinite: true,
     prevArrow: $("#arrow_prev"), //이전 화살표만 변경
     nextArrow: $("#aroww_next"), //다음 화살표만 변경
-
-    //클릭시 페이지 내에 특정위치로 스크롤 이동
   });
 });
