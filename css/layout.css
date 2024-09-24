@@ -207,7 +207,7 @@ body {
   font-weight: 800;
 }
 
-/* 노란 배경 섹션4 */
+/* 노란 배경 섹션 */
 
 #yellow_wrap {
   width: 100%;
@@ -221,6 +221,7 @@ body {
 .yellow_text {
   width: 100%;
   height: auto;
+  padding-top: 70px;
 }
 
 .easy {
@@ -300,7 +301,7 @@ body {
 .arrow_wrap {
   display: flex;
   gap: 50px;
-  margin-top: 20px;
+  margin: 10px 0px 0 20px;
 }
 .prev {
   cursor: pointer;

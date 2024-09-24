@@ -187,6 +187,19 @@ body {
 /* 생년월일 */
 /* SECTION - BIRTH */
 
+/* 스크롤바 */
+.birth select::-webkit-scrollbar {
+  width: 10px;
+}
+.birth select::-webkit-scrollbar-thumb {
+  background-color: #227aff;
+  border-radius: 3px;
+}
+.birth select::-webkit-scrollbar-track {
+  background-color: #ffeb3b;
+  border-radius: 6px;
+}
+
 .birth {
   width: 100%;
   height: auto;
@@ -205,7 +218,6 @@ body {
   border: 0px;
   color: #181818;
   font-size: 16px;
-
   box-sizing: border-box;
 }
 
