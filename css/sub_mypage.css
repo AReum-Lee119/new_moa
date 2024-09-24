@@ -35,21 +35,8 @@ p {
   font-weight: 800;
   text-align: left;
   margin-left: 160px;
-  z-index: 999;
   line-height: 40px;
   margin-bottom: 60px;
-}
-
-.spirit_left h3::before {
-  content: "";
-  display: block;
-  width: 93px;
-  height: 25px;
-  background-color: #fce53d;
-  position: absolute;
-  top: 52px;
-  left: 261px;
-  z-index: -1;
 }
 
 .people_img img {

@@ -300,28 +300,15 @@ body {
 /* 양옆 화살표 */
 .arrow_wrap {
   display: flex;
+  justify-content: end;
   gap: 50px;
-  margin: 10px 0px 0 20px;
+  margin-bottom: 20px;
 }
 .prev {
   cursor: pointer;
 }
-.prev:hover {
-  width: 18px;
-  height: 18px;
-  border-radius: 20px;
-  background-color: #f7f7f7;
-}
-
 .next {
   cursor: pointer;
-}
-.next:hover {
-  width: 18px;
-  height: 18px;
-  border-radius: 20px;
-  background-color: #f7f7f7;
-  transition: all 0.3s ease;
 }
 
 /* 배너 */
